@@ -1,0 +1,50 @@
+The UAE is home to a thriving SME ecosystem that drives innovation, employment, and GDP growth. Yet, access to working capital remains a pressing challenge, particularly for start-ups and small businesses lacking formal credit histories or traditional financial backing. This challenge, launched in collaboration with Ignyte invites bold thinkers to design scalable, digital-first models or platforms that unlock working capital for SMEs through alternative credit scoring, microfinance, supply chain financing, or community-driven funding. The goal is to empower SMEs to grow sustainably, inclusively, and independently of traditional financial bottlenecks.
+
+Challenge Description
+
+Your task is to design an innovative model or platform that enables SMEs and start-ups in the UAE to digitally access working capital. Solutions may include:
+
+• Supply chain finance platforms
+
+• Microfinance solutions
+
+• Community-led lending or funding models
+
+• AI-enabled alternative credit scoring
+
+• Embedded financing within digital ecosystems
+
+Solutions should go beyond conventional financing to address challenges such as lack of collateral, limited credit history, or regulatory complexity. Proposals should demonstrate how they can improve financial access for women-led businesses, micro-enterprises, and expat-owned SMEs, especially those underserved by mainstream banks.
+
+Shortlisted participants will be evaluated based on:
+
+• Team expertise: Demonstrated experience in fintech, credit modelling, digital platforms, or SME lending.
+
+• Feasibility: Practicality of implementation, including regulatory alignment.
+
+• Market readiness: Availability of a prototype or MVP (preferred).
+
+• Vision: Commitment to long-term impact on SME development in the UAE.
+
+Evaluation Criteria
+
+Your submission will be evaluated across the following key areas, each weighted to reflect its importance:
+
+Relevance to UAE SMEs (20%)
+
+How effectively does your solution address the financing challenges faced by SMEs and start-ups within the UAE’s business, regulatory, and economic environment?
+
+Innovation and differentiation (15%) Does your model introduce a unique approach or significantly improve upon current SME financing methods? Innovation in data, technology, and user experience will be rewarded.
+
+Scalability (15%) Can the solution scale efficiently across the UAE and potentially expand to the wider GCC region without requiring major technical or operational overhauls?
+
+Monetisation potential (15%) Is your platform commercially viable? We are looking for strong, clear monetisation models, whether through subscriptions, fees, commissions, or embedded financial services.
+
+Access and inclusivity (10%) Does the solution enable broad participation from diverse SME types, especially micro, women-led, and expat-owned businesses that may lack formal financial histories?
+
+Use of alternative credit scoring and funding models (10%) How creatively does your platform leverage non-traditional data or funding mechanisms (e.g., supply chain finance, community-led lending, or embedded credit scoring)?
+
+Ease of use and adoption (10%) Is the platform intuitive and SME-friendly? A seamless onboarding process, mobile-first experience, and multi-language support will be viewed favourably.
+
+Sustainability and social impact (5%) Beyond profitability, does your solution contribute to the long-term resilience of the SME ecosystem and support the UAE’s broader goals of entrepreneurship and financial inclusion?
+
