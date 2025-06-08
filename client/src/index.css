@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* UAE Theme Colors */
+  --uae-blue: hsl(218, 82%, 33%);
+  --uae-green: hsl(144, 100%, 33%);
+  --uae-red: hsl(351, 91%, 47%);
+  --uae-gold: hsl(51, 100%, 50%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Custom UAE Styling */
+.gradient-bg {
+  background: linear-gradient(135deg, var(--uae-blue) 0%, var(--uae-green) 100%);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-10px); 
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+.arabic-text {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* UAE Color Utilities */
+.text-uae-blue {
+  color: var(--uae-blue);
+}
+
+.text-uae-green {
+  color: var(--uae-green);
+}
+
+.text-uae-red {
+  color: var(--uae-red);
+}
+
+.text-uae-gold {
+  color: var(--uae-gold);
+}
+
+.bg-uae-blue {
+  background-color: var(--uae-blue);
+}
+
+.bg-uae-green {
+  background-color: var(--uae-green);
+}
+
+.bg-uae-red {
+  background-color: var(--uae-red);
+}
+
+.bg-uae-gold {
+  background-color: var(--uae-gold);
+}
+
+.border-uae-blue {
+  border-color: var(--uae-blue);
+}
+
+.border-uae-green {
+  border-color: var(--uae-green);
+}
+
+/* Hover effects */
+.hover\:bg-uae-blue:hover {
+  background-color: var(--uae-blue);
+}
+
+.hover\:text-uae-blue:hover {
+  color: var(--uae-blue);
+}
+
+/* Focus effects */
+.focus\:ring-uae-blue:focus {
+  --tw-ring-color: var(--uae-blue);
+}
+
+.focus\:border-uae-blue:focus {
+  border-color: var(--uae-blue);
+}
