@@ -101,6 +101,11 @@ export class MemStorage implements IStorage {
       creditScore: null,
       riskLevel: null,
       createdAt: new Date(),
+      tradeLicense: insertUser.tradeLicense || null,
+      establishedYear: insertUser.establishedYear || null,
+      employeeCount: insertUser.employeeCount || null,
+      monthlyRevenue: insertUser.monthlyRevenue || null,
+      preferredLanguage: insertUser.preferredLanguage || "en",
     };
     this.users.set(id, user);
     return user;
@@ -129,6 +134,10 @@ export class MemStorage implements IStorage {
       fundingDate: null,
       createdAt: new Date(),
       updatedAt: new Date(),
+      documents: insertApplication.documents || null,
+      currency: insertApplication.currency || "AED",
+      repaymentTerm: insertApplication.repaymentTerm || null,
+      interestRate: null,
     };
     this.loanApplications.set(id, application);
     return application;
@@ -163,6 +172,8 @@ export class MemStorage implements IStorage {
       id,
       uploadDate: new Date(),
       status: "pending",
+      applicationId: insertDocument.applicationId || null,
+      fileSize: insertDocument.fileSize || null,
     };
     this.documents.set(id, document);
     return document;
@@ -195,6 +206,9 @@ export class MemStorage implements IStorage {
       status: "open",
       fundedAmount: "0",
       createdAt: new Date(),
+      description: insertLoan.description || null,
+      collateral: insertLoan.collateral || null,
+      fundingTarget: insertLoan.fundingTarget || null,
     };
     this.communityLoans.set(id, loan);
     return loan;
@@ -235,7 +249,7 @@ export class MemStorage implements IStorage {
 
   async getLatestCreditAssessment(userId: number): Promise<CreditAssessment | undefined> {
     const assessments = await this.getCreditAssessmentsByUser(userId);
-    return assessments.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime())[0];
+    return assessments.sort((a, b) => (b.createdAt?.getTime() || 0) - (a.createdAt?.getTime() || 0))[0];
   }
 
   // Funding transaction operations
