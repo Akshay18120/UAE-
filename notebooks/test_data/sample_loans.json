@@ -1,0 +1,78 @@
+[
+  {
+    "id": "LOAN001",
+    "borrower": {
+      "id": "USER001",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "amount": 50000,
+    "term_months": 12,
+    "interest_rate": 8.5,
+    "purpose": "Business Expansion",
+    "status": "APPROVED",
+    "created_at": "2025-01-15T10:30:00Z",
+    "updated_at": "2025-01-20T14:45:00Z"
+  },
+  {
+    "id": "LOAN002",
+    "borrower": {
+      "id": "USER002",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com"
+    },
+    "amount": 25000,
+    "term_months": 6,
+    "interest_rate": 7.5,
+    "purpose": "Inventory Purchase",
+    "status": "PENDING",
+    "created_at": "2025-02-01T09:15:00Z",
+    "updated_at": "2025-02-01T09:15:00Z"
+  },
+  {
+    "id": "LOAN003",
+    "borrower": {
+      "id": "USER003",
+      "name": "Acme Corp",
+      "email": "finance@acmecorp.com"
+    },
+    "amount": 150000,
+    "term_months": 24,
+    "interest_rate": 6.8,
+    "purpose": "Equipment Financing",
+    "status": "ACTIVE",
+    "created_at": "2024-12-10T11:20:00Z",
+    "updated_at": "2025-01-05T16:30:00Z"
+  },
+  {
+    "id": "LOAN004",
+    "borrower": {
+      "id": "USER001",
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "amount": 75000,
+    "term_months": 18,
+    "interest_rate": 7.2,
+    "purpose": "Working Capital",
+    "status": "REPAID",
+    "created_at": "2024-09-05T14:00:00Z",
+    "updated_at": "2025-03-15T10:20:00Z"
+  },
+  {
+    "id": "LOAN005",
+    "borrower": {
+      "id": "USER004",
+      "name": "Tech Startup Inc.",
+      "email": "finance@techstartup.io"
+    },
+    "amount": 200000,
+    "term_months": 36,
+    "interest_rate": 9.0,
+    "purpose": "Product Development",
+    "status": "REJECTED",
+    "created_at": "2025-01-20T13:45:00Z",
+    "updated_at": "2025-02-05T11:10:00Z",
+    "rejection_reason": "Insufficient credit history"
+  }
+]

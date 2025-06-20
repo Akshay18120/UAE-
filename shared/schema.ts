@@ -19,6 +19,7 @@ export const users = pgTable("users", {
   creditScore: integer("credit_score"),
   riskLevel: text("risk_level"), // low, medium, high
   preferredLanguage: text("preferred_language").default("en"),
+  role: text("role").default("business_owner"),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
